@@ -1,0 +1,23 @@
+/* stylelint-disable at-rule-no-unknown */
+/* Tailwind directives: disable "unknown at-rule" warnings from stylelint/CSS linters */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+/* Prevent browser 'overscroll' white-pull effects on mobile/desktop when the
+	 user drags the viewport beyond the document edges. Keeps scroll containment
+	 inside the app and avoids showing white background flashes. */
+html,
+body,
+#root {
+  overscroll-behavior: none; /* block scroll chaining and pull-to-refresh */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+/* Additionally ensure the app container uses touch-action to allow panning
+	 without triggering unintended gestures. Adjust if your UI requires
+	 different interaction handling (e.g. pinch-zoom). */
+body {
+  touch-action: pan-x pan-y;
+}
