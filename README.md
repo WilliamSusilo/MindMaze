@@ -26,9 +26,8 @@ Proyek ini masih dalam tahap pengembangan dan terbuka untuk kontribusi.
 - TypeScript
 - HTML dan CSS
 
-
-MindMaze/
 ```bash
+MindMaze/
 ├── Backend/ # Server, API, dan logika game
 ├── Frontend/ # Client, UI, dan tampilan game
 ├── .gitignore
